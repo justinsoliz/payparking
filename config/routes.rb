@@ -1,8 +1,6 @@
 Payparking::Application.routes.draw do
 
-  get "user/new"
-
-  get "pages/home"
+  resources :users
 
   root :to => 'pages#home'
 
