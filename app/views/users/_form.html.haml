@@ -1,4 +1,7 @@
 = form_for @user do |f|
+  - @user.errors.full_messages.each do |msg|
+    %p
+      = msg
 
   .control-group
     = f.label :email, :class => 'control-label'
