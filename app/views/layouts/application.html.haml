@@ -9,8 +9,25 @@
     = render 'shared/stylesheets'
 
   %body
-    = yield
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          %a.btn.btn-navbar{:data-toggle="collapse", data-target=".nav-collapse"}
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          = link_to "MySpot", root_path, :class => 'brand'
+          .nav-collapse
+            %ul.nav
+              %li link_to "About"
 
-    %footer
+    .container
+      .row
+        .span9 
+          = yield
+        .span3
+          .h2 About Us
+
+      %footer
           
     - javascript_include_tag 'application'
