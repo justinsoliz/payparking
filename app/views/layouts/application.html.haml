@@ -1,0 +1,16 @@
+!!! 5
+%html
+  %head
+    %title
+      
+      - if content_for?(:title)
+        = yield(:title)
+
+    = render 'shared/stylesheets'
+
+  %body
+    = yield
+
+    %footer
+          
+    - javascript_include_tag 'application'
