@@ -6,10 +6,7 @@
     = render 'shared/stylesheets'
 
   %body
-    - flash.each do |key, value|
-      .flash{ :id => '#{key}' }
-        = value
-
+    
     .navbar.navbar-fixed-top
       .navbar-inner
         .container
@@ -29,6 +26,10 @@
                 %li= link_to "Park", new_transaction_path
                 %li= link_to "View transactions", transactions_path
                 %li= link_to "Vehicles", vehicles_path  
+
+    - flash.each do |key, value|
+      .flash{ :id => "#{key}" }
+        = value
 
 
     .container-fluid

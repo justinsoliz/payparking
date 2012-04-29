@@ -1,3 +1,61 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	background-image: url('bg-pattern.png');
+}
+
+.flash#notice { color: green; margin-left: 10px; }
+
+.flash#alert { color: red; margin-left: 10px; }
+
+.link_container {
+	position: relative;
+	height: 480px;
+}
+
+.link_circles {
+	position: absolute;
+	background-position: bottom;
+}
+
+.link_circles:active {
+	background-position: top;
+}
+
+#yellow {
+	background-image:url('Yellow.png');
+	background-repeat:no-repeat;
+	left: 0s%;
+	top: 0%;
+	height: 164px;
+	width: 180px;
+}
+
+#green {
+	background-image:url('green.png');
+	background-repeat:no-repeat;
+	left: 55%;
+	top: 15%;
+	height: 150px;
+	width: 150px;
+}
+
+#mustard {
+	background-image:url('mustard.png');
+	background-repeat:no-repeat;
+	left: 15%;
+	bottom: 30%;
+	height: 120px;
+	width: 120px;
+}
+
+#orange {
+	background-image:url('orange.png');
+	background-repeat:no-repeat;	
+	left: 60%;
+	bottom: 20%;
+	height: 98px;
+	width: 105px;
+}

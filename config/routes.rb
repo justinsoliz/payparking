@@ -1,8 +1,7 @@
 Payparking::Application.routes.draw do
 
-  get "vehicles/index"
 
-  get "vehicles/new"
+  get '/pages/account'
 
   devise_for :users
 
