@@ -1,7 +1,7 @@
 Payparking::Application.routes.draw do
 
 
-  get '/pages/account'
+  get '/account' => 'pages#account'
 
   devise_for :users
 
@@ -9,6 +9,6 @@ Payparking::Application.routes.draw do
 
   resources :vehicles
 
-  root :to => 'pages#home'
+  root :to => 'pages#account'
 
 end

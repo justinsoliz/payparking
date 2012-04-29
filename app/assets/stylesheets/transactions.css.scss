@@ -7,12 +7,21 @@
 
   background-image:url('go-button.png');
   background-repeat:no-repeat;
+  background-position: bottom;
 
   height: 106px;
   weight: 106px;
 }
 
+#complete:active {
+  background-position: top;
+}
+
 #complete:hover {
   cursor: pointer;
   text-decoration: none;
+}
+
+.transaction_form {
+  text-align: center;
 }

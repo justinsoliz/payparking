@@ -15,7 +15,7 @@
             %span.icon-bar
             %span.icon-bar
 
-          = image_tag "myspot-header-logo.png", :class => "brand", :witdh => '15px'
+          = image_tag "myspot-header-logo-25px.png", :class => "brand", :witdh => '15px'
 
           .container.nav-collapse
             %ul.nav
@@ -23,6 +23,7 @@
                 %li= link_to "Park", new_transaction_path
                 %li= link_to "View transactions", transactions_path
                 %li= link_to "Vehicles", vehicles_path  
+                %li= link_to "Account", '/account'
                 %li= link_to "Sign out", destroy_user_session_path, :method => :delete
 
               - else

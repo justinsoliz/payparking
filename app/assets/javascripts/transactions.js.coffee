@@ -23,7 +23,7 @@ $ ->
 
   hm[0].Hours = {}
   
-  for n in [0..10] when n <= 10
+  for n in [0..1] when n <= 1
     hm[0].Hours[n] = if n < 10 then '0' + n else n
 
   

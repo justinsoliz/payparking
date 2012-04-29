@@ -1,7 +1,7 @@
-%h2 Parking duration (minutes)
+%h2 Parking duration
 
-%h2= @transaction.minutes
+%h2= @transaction.minutes_remaining
 
 %br
 
-= link_to "My Account", "#", :class => 'btn btn-large btn-danger'
+= link_to "My Account", "/account", :class => 'btn btn-large btn-danger'
