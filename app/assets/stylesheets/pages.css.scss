@@ -17,40 +17,45 @@ body {
 
 .link_circles {
 	position: absolute;
+	background-position: bottom;
+}
+
+.link_circles:active {
+	background-position: top;
 }
 
 #yellow {
-	background-image:url('yellow-ball.png');
+	background-image:url('Yellow.png');
 	background-repeat:no-repeat;
-	left: 0%;
-	top: 55%;
+	left: 0s%;
+	top: 0%;
 	height: 164px;
-	width: 164px;
+	width: 180px;
 }
 
 #green {
-	background-image:url('green-button.png');
+	background-image:url('green.png');
 	background-repeat:no-repeat;
-	left: 30%;
-	top: 20%;
+	left: 55%;
+	top: 15%;
 	height: 150px;
 	width: 150px;
 }
 
 #mustard {
-	background-image:url('mustard-button.png');
+	background-image:url('mustard.png');
 	background-repeat:no-repeat;
 	left: 15%;
-	top: 45%;
+	bottom: 30%;
 	height: 120px;
 	width: 120px;
 }
 
 #orange {
-	background-image:url('orange-button.png');
+	background-image:url('orange.png');
 	background-repeat:no-repeat;	
 	left: 60%;
-	top: 60%;
-	height: 105px;
+	bottom: 20%;
+	height: 98px;
 	width: 105px;
 }
