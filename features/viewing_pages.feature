@@ -5,4 +5,4 @@ Feature: Viewing static pages
 
   Scenario: Viewing the homepage
     Given I am on the homepage
-    Then I should see "PayParking"
+    Then I should see "MySpot"

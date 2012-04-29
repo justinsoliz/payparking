@@ -1,0 +1,3 @@
+- @transactions.each do |transaction|
+  .view_transaction
+    = "Parked for #{transaction.minutes} minutes on #{transaction.created_at.to_s(:long)}"
