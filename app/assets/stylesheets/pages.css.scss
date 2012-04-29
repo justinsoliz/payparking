@@ -10,3 +10,47 @@ body {
 
 .flash#alert { color: red; margin-left: 10px; }
 
+.link_container {
+	position: relative;
+	height: 480px;
+}
+
+.link_circles {
+	position: absolute;
+}
+
+#yellow {
+	background-image:url('yellow-ball.png');
+	background-repeat:no-repeat;
+	left: 0%;
+	top: 55%;
+	height: 164px;
+	width: 164px;
+}
+
+#green {
+	background-image:url('green-button.png');
+	background-repeat:no-repeat;
+	left: 30%;
+	top: 20%;
+	height: 150px;
+	width: 150px;
+}
+
+#mustard {
+	background-image:url('mustard-button.png');
+	background-repeat:no-repeat;
+	left: 15%;
+	top: 45%;
+	height: 120px;
+	width: 120px;
+}
+
+#orange {
+	background-image:url('orange-button.png');
+	background-repeat:no-repeat;	
+	left: 60%;
+	top: 60%;
+	height: 105px;
+	width: 105px;
+}
