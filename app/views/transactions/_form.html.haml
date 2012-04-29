@@ -1,7 +1,9 @@
 = form_for @transaction do |f|
   
   %p
-    = f.label :minutes
-    = f.text_field :minutes
+    = f.hidden_field :minutes
 
-  = f.submit 'Complete'
+  %input{:type => 'hidden', :id => 'scroller_val' }
+
+  %a{ :id => 'complete'}
+    Complete
