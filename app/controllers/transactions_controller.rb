@@ -1,7 +1,8 @@
 class TransactionsController < ApplicationController
+  before_filter :authenticate_user!
 
   def index
-    @transactions = Transaction.all
+    @transactions = Transaction.where(:user_id => current_user.id)
   end
 
   def new
@@ -9,7 +10,10 @@ class TransactionsController < ApplicationController
   end
 
   def create
-    @transaction = Transaction.new(params[:transaction])
+    # @transaction = Transaction.new(params[:transaction])
+    
+    @transaction = current_user.transactions.build(params[:transaction])
+
     if @transaction.save
       flash[:notice] = "Parking reserved for #{@transaction.minutes} minutes"
       redirect_to @transaction
