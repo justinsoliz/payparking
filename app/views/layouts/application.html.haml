@@ -14,7 +14,9 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          = link_to "MySpot", root_path, :class => 'brand'
+
+          = image_tag "myspot-header-logo.png", :class => "brand", :witdh => '15px'
+
           .container.nav-collapse
             %ul.nav
               - if user_signed_in?

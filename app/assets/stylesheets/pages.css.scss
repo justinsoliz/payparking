@@ -24,6 +24,13 @@ body {
 	background-position: top;
 }
 
+.link_circles a {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	display:block;
+}
+
 #yellow {
 	background-image:url('Yellow.png');
 	background-repeat:no-repeat;
@@ -58,4 +65,8 @@ body {
 	bottom: 20%;
 	height: 98px;
 	width: 105px;
+}
+
+.logo {
+	margin-left: -20px;
 }

@@ -4,8 +4,12 @@
 
 #complete {
   display: block;
-  padding: 1em;
-  border: 2px solid #bbb;
+
+  background-image:url('go-button.png');
+  background-repeat:no-repeat;
+
+  height: 106px;
+  weight: 106px;
 }
 
 #complete:hover {
