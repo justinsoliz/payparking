@@ -13,4 +13,9 @@
 #
 
 class Vehicle < ActiveRecord::Base
+
+  def to_s
+    "#{make} #{model}"
+  end
+
 end

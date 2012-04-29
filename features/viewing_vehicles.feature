@@ -8,4 +8,4 @@ Feature: Viewing vehicles
     Given there is a vehicle with a license of "ABC-123"
     And I am on the homepage
     And I follow "Vehicles"
-    Then I should see "ABC-123"
+    Then I should see "Ford F150"

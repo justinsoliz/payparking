@@ -4,7 +4,7 @@
 %ul
   - @vehicles.each do |vehicle|
     
-    %li= link_to vehicle.license, vehicle
+    %li= link_to vehicle.to_s, vehicle
 
 %p
   = link_to "New vehicle", new_vehicle_path

@@ -19,4 +19,15 @@ class VehiclesController < ApplicationController
     @vehicle = Vehicle.find(params[:id])
   end
 
+  def edit
+    @vehicle = Vehicle.find(params[:id])
+  end
+
+  def update
+    @vehicle = Vehicle.find(params[:id])
+    @vehicle.update_attributes(params[:vehicle])
+    flash[:notice] = "Your vehicle has been updated."
+    redirect_to vehicles_path
+  end
+
 end
