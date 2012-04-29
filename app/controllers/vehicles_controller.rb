@@ -1,7 +1,8 @@
 class VehiclesController < ApplicationController
+  before_filter :authenticate_user!
 
   def index
-    @vehicles = Vehicle.all
+    @vehicles = Vehicle.where(:user_id => current_user.id)
   end
 
   def new
@@ -9,7 +10,8 @@ class VehiclesController < ApplicationController
   end
 
   def create
-    @vehicle = Vehicle.new(params[:vehicle])
+    # @vehicle = Vehicle.new(params[:vehicle])
+    @vehicle = current_user.vehicles.build(params[:vehicle])
     @vehicle.save
     flash[:notice] = 'Your vehicle has been saved.'
     redirect_to vehicles_path
