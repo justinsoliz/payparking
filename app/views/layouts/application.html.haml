@@ -12,22 +12,24 @@
 
     .navbar.navbar-fixed-top
       .navbar-inner
-        .container-fluid
+        .container
           %a.btn.btn-navbar(data-target=".nav-collapse" data-toggle="collapse")
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
           = link_to "MySpot", root_path, :class => 'brand'
-          .container.nav-collapse
+          .nav-collapse.collapse
             %ul.nav
-            - if user_signed_in?
-              %li= link_to "Sign out", destroy_user_session_path, :method => :delete
+              - if user_signed_in?
+                %li= link_to "Sign out", destroy_user_session_path, :method => :delete
 
-            - else
-              %li= link_to "Register", new_user_registration_path
-              %li= link_to "Sign in", new_user_session_path
-              %li= link_to "Park", new_transaction_path
-              %li= link_to "View transactions", transactions_path
+              - else
+                %li= link_to "Register", new_user_registration_path
+                %li= link_to "Sign in", new_user_session_path
+                %li= link_to "Park", new_transaction_path
+                %li= link_to "View transactions", transactions_path
+                %li= link_to "Vehicles", vehicles_path  
+
 
     .container-fluid
       .row

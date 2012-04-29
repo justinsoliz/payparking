@@ -1,0 +1,21 @@
+%h1 Add a new vehicle
+
+= form_for @vehicle do |f|
+  %p
+    = f.label :make
+    = f.text_field :make
+  %p
+    = f.label :model
+    = f.text_field :model
+  %p
+    = f.label :year
+    = f.text_field :year
+  %p
+    = f.label :color
+    = f.text_field :color
+  %p
+    = f.label :license
+    = f.text_field :license
+
+  %p
+    = f.submit 'Save vehicle'
