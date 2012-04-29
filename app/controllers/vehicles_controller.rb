@@ -10,7 +10,6 @@ class VehiclesController < ApplicationController
   end
 
   def create
-    # @vehicle = Vehicle.new(params[:vehicle])
     @vehicle = current_user.vehicles.build(params[:vehicle])
     @vehicle.save
     flash[:notice] = 'Your vehicle has been saved.'

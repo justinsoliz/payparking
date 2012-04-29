@@ -10,8 +10,6 @@ class TransactionsController < ApplicationController
   end
 
   def create
-    # @transaction = Transaction.new(params[:transaction])
-    
     @transaction = current_user.transactions.build(params[:transaction])
 
     if @transaction.save
