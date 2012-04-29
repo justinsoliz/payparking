@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require twitter/bootstrap
 //= require bootstrap.min
-//= require jquery.mobile-1.1.0.min
-//= require mobiscroll.full.min
 //= require_tree .
