@@ -9,6 +9,8 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require twitter_bootstrap
+ *= require jquery.mobile-1.1.0.min
+ *= require mobiscroll.full.min
  *= require_self
  *= require_tree .
 */
