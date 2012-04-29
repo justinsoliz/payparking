@@ -1,10 +1,7 @@
 !!! 5
 %html
   %head
-    %title
-      
-      - if content_for?(:title)
-        = yield(:title)
+    %title= content_for?(:title) ? yield(:title) : "MySpot"
 
     = render 'shared/stylesheets'
 
@@ -15,17 +12,17 @@
 
     .navbar.navbar-fixed-top
       .navbar-inner
-        .container
-        %a.btn.btn-navbar{:data => { :toggle=> "collapse", :target=> ".nav-collapse"}}
-          %span.icon-bar
-          %span.icon-bar
-          %span.icon-bar
-        = link_to "MySpot", root_path, :class => 'brand'
-        .nav-collapse
-          %ul.nav
-            %li= link_to "About", "#"
+        .container-fluid
+          %a.btn.btn-navbar(data-target=".nav-collapse" data-toggle="collapse")
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          = link_to "MySpot", root_path, :class => 'brand'
+          .container.nav-collapse
+            %ul.nav
+              %li= link_to 'About', '#'
 
-    .container
+    .container-fluid
       .row
         .span12 
           = yield
