@@ -9,13 +9,13 @@
     
     .navbar.navbar-fixed-top
       .navbar-inner
-        .container
+        .container-fluid
           %a.btn.btn-navbar(data-target=".nav-collapse" data-toggle="collapse")
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
           = link_to "MySpot", root_path, :class => 'brand'
-          .nav-collapse.collapse
+          .container.nav-collapse
             %ul.nav
               - if user_signed_in?
                 %li= link_to "Sign out", destroy_user_session_path, :method => :delete
