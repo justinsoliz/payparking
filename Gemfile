@@ -10,7 +10,7 @@ gem 'dynamic_form'
 
 gem 'devise'
 
-# gem 'therubyracer'
+gem 'therubyracer'
 
 gem "twitter-bootstrap-rails"
 
